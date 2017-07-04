@@ -218,18 +218,6 @@ class SearchViewController: UIViewController {
     }
     
     
-    func kindForDisplay(_ kind: String) -> String {
-        switch kind {
-        case "album":
-            return "Album"
-        case "feature-movie":
-            return "Movie"
-        default:
-            return kind
-        }
-    }
-    
-    
     func showNetworkError() {
         let alert = UIAlertController(title: "Whoops...",
                                       message: "There was an error reading from the iTunes Store. Please try again.",
@@ -263,6 +251,8 @@ extension SearchViewController: UISearchBarDelegate {
             tableView.reloadData()
             
             let url = self.iTunesURL(searchText: searchBar.text!, category: segmentedControl.selectedSegmentIndex)
+            print("url: \(url)")
+            
             let session = URLSession.shared
             dataTask = session.dataTask(with: url, completionHandler: { (data, response, error) in
                 
@@ -286,7 +276,7 @@ extension SearchViewController: UISearchBarDelegate {
                     
                 }
                 else {
-                    print("Failure! \(response!)")
+                    print("Failure! \(String(describing: response))")
                 }
                 
                 DispatchQueue.main.async {
@@ -334,13 +324,8 @@ extension SearchViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifiers.searchResultCell, for: indexPath) as! SearchResultCell
         
         let searchResult = searchResults[indexPath.row]
-        cell.nameLabel.text = searchResult.name
-        if searchResult.artistName.isEmpty {
-            cell.artistNameLabel.text = "Unknown"
-        }
-        else {
-            cell.artistNameLabel.text = String(format: "%@ (%@)", searchResult.artistName, kindForDisplay(searchResult.kind))
-        }
+        
+        cell.configure(for: searchResult)
         
         return cell
     }
