@@ -44,24 +44,12 @@ class SearchResultCell: UITableViewCell {
             artistNameLabel.text = "Unknown"
         }
         else {
-            artistNameLabel.text = String(format: "%@ (%@)", searchResult.artistName, kindForDisplay(searchResult.kind))
+            artistNameLabel.text = String(format: "%@ (%@)", searchResult.artistName, searchResult.kindForDisplay())
         }
         
         artworkImageView.image = UIImage(named:"Placeholder")
         if let smallURL = URL(string: searchResult.artworkSmallURL) {
             downloadTask = artworkImageView.loadImage(url: smallURL)
-        }
-    }
-    
-    
-    func kindForDisplay(_ kind: String) -> String {
-        switch kind {
-        case "album":
-            return "Album"
-        case "feature-movie":
-            return "Movie"
-        default:
-            return kind
         }
     }
 

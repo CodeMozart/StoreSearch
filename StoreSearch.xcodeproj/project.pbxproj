@@ -17,6 +17,8 @@
 		F8F5C6041F08FE4E005B9045 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5C6031F08FE4E005B9045 /* NothingFoundCell.xib */; };
 		F8F5C6061F0A4C38005B9045 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5C6051F0A4C38005B9045 /* LoadingCell.xib */; };
 		F8F5C6081F0B6DF1005B9045 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C6071F0B6DF1005B9045 /* UIImageView+DownloadImage.swift */; };
+		F8F5C60A1F0B7DE9005B9045 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C6091F0B7DE9005B9045 /* DetailViewController.swift */; };
+		F8F5C60C1F0B8909005B9045 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C60B1F0B8909005B9045 /* DimmingPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F8F5C6031F08FE4E005B9045 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		F8F5C6051F0A4C38005B9045 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		F8F5C6071F0B6DF1005B9045 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		F8F5C6091F0B7DE9005B9045 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F8F5C60B1F0B8909005B9045 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +68,18 @@
 		F8F5C5EA1F089371005B9045 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				F8F5C5F21F089371005B9045 /* Assets.xcassets */,
 				F8F5C5EB1F089371005B9045 /* AppDelegate.swift */,
 				F8F5C5ED1F089371005B9045 /* SearchViewController.swift */,
-				F8F5C6051F0A4C38005B9045 /* LoadingCell.xib */,
-				F8F5C6031F08FE4E005B9045 /* NothingFoundCell.xib */,
+				F8F5C6091F0B7DE9005B9045 /* DetailViewController.swift */,
+				F8F5C60B1F0B8909005B9045 /* DimmingPresentationController.swift */,
 				F8F5C5FD1F08E904005B9045 /* SearchResult.swift */,
-				F8F5C5EF1F089371005B9045 /* Main.storyboard */,
-				F8F5C5F21F089371005B9045 /* Assets.xcassets */,
 				F8F5C6011F08F722005B9045 /* SearchResultCell.swift */,
 				F8F5C6071F0B6DF1005B9045 /* UIImageView+DownloadImage.swift */,
 				F8F5C5FF1F08F287005B9045 /* SearchResultCell.xib */,
+				F8F5C6051F0A4C38005B9045 /* LoadingCell.xib */,
+				F8F5C6031F08FE4E005B9045 /* NothingFoundCell.xib */,
+				F8F5C5EF1F089371005B9045 /* Main.storyboard */,
 				F8F5C5F71F089371005B9045 /* Info.plist */,
 			);
 			path = StoreSearch;
@@ -155,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F5C5EE1F089371005B9045 /* SearchViewController.swift in Sources */,
+				F8F5C60C1F0B8909005B9045 /* DimmingPresentationController.swift in Sources */,
 				F8F5C5FE1F08E904005B9045 /* SearchResult.swift in Sources */,
 				F8F5C6021F08F722005B9045 /* SearchResultCell.swift in Sources */,
+				F8F5C60A1F0B7DE9005B9045 /* DetailViewController.swift in Sources */,
 				F8F5C5EC1F089371005B9045 /* AppDelegate.swift in Sources */,
 				F8F5C6081F0B6DF1005B9045 /* UIImageView+DownloadImage.swift in Sources */,
 			);

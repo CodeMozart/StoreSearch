@@ -17,6 +17,19 @@ class SearchResult {
     var currency = ""
     var price = 0.0
     var genre = ""
+    
+    func kindForDisplay() -> String {
+        switch kind {
+        case "album":
+            return "Album"
+        case "feature-movie":
+            return "Movie"
+        case "song":
+            return "Music"
+        default:
+            return kind
+        }
+    }
 }
 
 // operator overloading
