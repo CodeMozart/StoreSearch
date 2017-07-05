@@ -25,26 +25,26 @@
                             <constraint firstAttribute="height" constant="60" id="TrF-rm-eMk"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-5V-2oJ">
-                        <rect key="frame" x="90" y="15" width="222" height="22"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e8-5V-2oJ">
+                        <rect key="frame" x="90" y="10" width="47" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWP-Nj-hT5">
-                        <rect key="frame" x="90" y="44" width="222" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <rect key="frame" x="90" y="52" width="81.5" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                         <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6e8-5V-2oJ" firstAttribute="top" secondItem="RL5-50-Tia" secondAttribute="top" constant="15" id="Cmz-hP-vkZ"/>
-                    <constraint firstAttribute="trailing" secondItem="6e8-5V-2oJ" secondAttribute="trailing" constant="8" id="Iz5-v0-Q6I"/>
-                    <constraint firstAttribute="bottom" secondItem="FWP-Nj-hT5" secondAttribute="bottom" constant="17.5" id="W6o-Zf-I0S"/>
-                    <constraint firstItem="FWP-Nj-hT5" firstAttribute="leading" secondItem="Mms-J8-7ZJ" secondAttribute="trailing" constant="15" id="XHT-OW-rzQ"/>
+                    <constraint firstItem="FWP-Nj-hT5" firstAttribute="leading" secondItem="6e8-5V-2oJ" secondAttribute="leading" id="3e5-Fe-aMR"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6e8-5V-2oJ" secondAttribute="trailing" constant="8" id="Iz5-v0-Q6I"/>
+                    <constraint firstItem="6e8-5V-2oJ" firstAttribute="top" secondItem="Mms-J8-7ZJ" secondAttribute="top" id="UQN-vA-88L"/>
                     <constraint firstItem="Mms-J8-7ZJ" firstAttribute="leading" secondItem="RL5-50-Tia" secondAttribute="leading" constant="15" id="cQ8-DH-wrQ"/>
-                    <constraint firstAttribute="trailing" secondItem="FWP-Nj-hT5" secondAttribute="trailing" constant="8" id="dq5-BD-VAV"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FWP-Nj-hT5" secondAttribute="trailing" constant="8" id="dq5-BD-VAV"/>
+                    <constraint firstItem="FWP-Nj-hT5" firstAttribute="bottom" secondItem="Mms-J8-7ZJ" secondAttribute="bottom" id="kDs-wm-PFy"/>
                     <constraint firstItem="Mms-J8-7ZJ" firstAttribute="top" secondItem="RL5-50-Tia" secondAttribute="top" constant="10" id="nRn-Z0-8ja"/>
                     <constraint firstItem="6e8-5V-2oJ" firstAttribute="leading" secondItem="Mms-J8-7ZJ" secondAttribute="trailing" constant="15" id="twh-Ti-bpV"/>
                 </constraints>

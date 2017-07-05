@@ -29,7 +29,8 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.contentInset = UIEdgeInsetsMake(108, 0, 0, 0)
-        tableView.rowHeight = 80
+        
+//        tableView.rowHeight = 80
 //        tableView.keyboardDismissMode = .interactive;
         
         var cellNib = UINib(nibName: TableViewCellIdentifiers.searchResultCell, bundle: nil)
@@ -351,6 +352,12 @@ extension SearchViewController: UITableViewDataSource {
             return nil
         }
         return indexPath
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 80.0
     }
 }
 
