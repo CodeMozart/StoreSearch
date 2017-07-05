@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var priceButton: UIButton!
     
+    var downloadTask: URLSessionDownloadTask?
     var searchResult: SearchResult!
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,6 +26,13 @@ class DetailViewController: UIViewController {
         modalPresentationStyle = .custom
         transitioningDelegate = self
     }
+    
+    
+    deinit {
+        print("deinit \(self)")
+        downloadTask?.cancel()
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,15 +50,18 @@ class DetailViewController: UIViewController {
             updateUI()
         }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func close(_ sender: UIButton, forEvent event: UIEvent) {
         dismiss(animated: true, completion: nil)
     }
+    
     
     func updateUI() {
         nameLabel.text = searchResult.name
@@ -79,7 +90,12 @@ class DetailViewController: UIViewController {
             priceText = ""
         }
         priceButton.setTitle(priceText, for: .normal)
+        
+        if let largeURL = URL(string: searchResult.artworkLargeURL) {
+            downloadTask = artworkImageView.loadImage(url: largeURL)
+        }
     }
+    
 
     @IBAction func openInStore(_ sender: UIButton) {
         if let url = URL(string: searchResult.storeURL) {
