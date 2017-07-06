@@ -1,0 +1,35 @@
+/* Localized kind: Album */
+"Album" = "专辑";
+
+/* Localized kind: Audio Book */
+"Audio Book" = "有声书";
+
+/* Localized kind: Book */
+"Book" = "书";
+
+/* Localized kind: E-Book */
+"E-Book" = "电子书";
+
+/* Localized kind: Feature Movie */
+"Movie" = "电影";
+
+/* Localized kind: Song */
+"Song" = "歌曲";
+
+/* Error alert: message */
+"There was an error reading from the iTunes Store. Please try again." = "从商店获取数据出错. 请重试.";
+
+/* Localized kind: Unknown */
+"Unknown" = "未知";
+
+/* Error alert: title */
+"Whoops..." = "糟糕...";
+
+/* Localized kind: Nothing Found */
+"Nothing Found" = "无搜索结果";
+
+/* Localized kind: Podcast */
+"Podcast" = "播客";
+
+/* Localized kind: Software */
+"App" = "应用程序";

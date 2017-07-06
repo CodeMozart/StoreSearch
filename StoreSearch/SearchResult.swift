@@ -6,6 +6,18 @@
 //  Copyright © 2017年 Strawberry. All rights reserved.
 //
 
+import Foundation
+
+private let displayNamesForKind = [
+    "album": NSLocalizedString("Album", comment: "Localized kind: Album"),
+    "feature-movie": NSLocalizedString("Movie", comment: "Localized kind: Feature Movie"),
+    "audiobook": NSLocalizedString("Audio Book", comment: "Localized kind: Audio Book"),
+    "book": NSLocalizedString("Book", comment: "Localized kind: Book"),
+    "ebook": NSLocalizedString("E-Book", comment: "Localized kind: E-Book"),
+    "song": NSLocalizedString("Song", comment: "Localized kind: Song"),
+    "podcast": NSLocalizedString("Podcast", comment: "Localized kind: Podcast"),
+    "software": NSLocalizedString("App", comment: "Localized kind: Software")
+]
 
 class SearchResult {
     var name = ""
@@ -19,17 +31,9 @@ class SearchResult {
     var genre = ""
     
     func kindForDisplay() -> String {
-        switch kind {
-        case "album":
-            return "Album"
-        case "feature-movie":
-            return "Movie"
-        case "song":
-            return "Music"
-        default:
-            return kind
-        }
+        return displayNamesForKind[kind] ?? kind
     }
+    
 }
 
 // operator overloading

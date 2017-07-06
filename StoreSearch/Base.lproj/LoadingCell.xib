@@ -48,7 +48,7 @@
                     <constraint firstItem="ebd-bn-mZI" firstAttribute="centerX" secondItem="xBS-83-rBv" secondAttribute="centerX" id="hcl-w3-Ig0"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-224" y="19"/>
+            <point key="canvasLocation" x="54" y="-18"/>
         </tableViewCell>
     </objects>
 </document>
