@@ -24,6 +24,7 @@
 		F8F5C6121F0CE6D3005B9045 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C6111F0CE6D3005B9045 /* SlideOutAnimationController.swift */; };
 		F8F5C6141F0CEAD5005B9045 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C6131F0CEAD5005B9045 /* LandscapeViewController.swift */; };
 		F8F5C6161F0D12C8005B9045 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C6151F0D12C8005B9045 /* FadeOutAnimationController.swift */; };
+		F8F5C6181F0DF456005B9045 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C6171F0DF456005B9045 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F8F5C6111F0CE6D3005B9045 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		F8F5C6131F0CEAD5005B9045 /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		F8F5C6151F0D12C8005B9045 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		F8F5C6171F0DF456005B9045 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				F8F5C60F1F0CD07D005B9045 /* BounceAnimationController.swift */,
 				F8F5C6111F0CE6D3005B9045 /* SlideOutAnimationController.swift */,
 				F8F5C6151F0D12C8005B9045 /* FadeOutAnimationController.swift */,
+				F8F5C6171F0DF456005B9045 /* Search.swift */,
 				F8F5C60D1F0CBEAE005B9045 /* GradientView.swift */,
 				F8F5C5FD1F08E904005B9045 /* SearchResult.swift */,
 				F8F5C6011F08F722005B9045 /* SearchResultCell.swift */,
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F5C6181F0DF456005B9045 /* Search.swift in Sources */,
 				F8F5C5EE1F089371005B9045 /* SearchViewController.swift in Sources */,
 				F8F5C60C1F0B8909005B9045 /* DimmingPresentationController.swift in Sources */,
 				F8F5C6161F0D12C8005B9045 /* FadeOutAnimationController.swift in Sources */,
